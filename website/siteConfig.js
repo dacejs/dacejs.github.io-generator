@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
   title: 'Dace', // Title for your website.
-  tagline: '一个简单易用的 JavaScript 同构框架',
+  tagline: '🐟 一个简单易用的 JavaScript 同构框架',
   url: 'https://dacejs.github.io', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
