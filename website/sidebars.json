@@ -1,0 +1,44 @@
+{
+  "docs": {
+    "教程": [
+      "tutorial/getting-started",
+      "tutorial/navigate-between-pages",
+      "tutorial/using-shared-components",
+      "tutorial/create-dynamic-pages",
+      "tutorial/create-clean-urls-pages",
+      "tutorial/fetching-data-for-pages",
+      "tutorial/dance-with-redux",
+      "tutorial/publish-website"
+    ],
+    "概念": [
+      "concepts/commands",
+      "concepts/routing",
+      "concepts/profile",
+      "concepts/proxy",
+      "concepts/configuration",
+      "concepts/plugins"
+    ],
+    "常见问题": [
+      "faq/custom-eslint",
+      "faq/custom-stylelint",
+      "faq/custom-babelrc",
+      "faq/custom-postcss",
+      "faq/custom-webpack",
+      "faq/custom-document",
+      "faq/custom-router",
+      "faq/code-splitting",
+      "faq/cdn"
+    ],
+    "插件": [
+      "plugins/dace-plugin-redux"
+    ]
+  },
+  "docs-other": {
+    "API": [
+      "api/link",
+      "api/head",
+      "api/get-initial-props",
+      "api/document"
+    ]
+  }
+}
