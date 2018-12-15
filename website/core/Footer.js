@@ -42,21 +42,20 @@ class Footer extends React.Component {
             <a href={this.docUrl('api/link', this.props.language)}>API</a>
           </div>
           <div>
-            <h5>Community</h5>
-            <a href={this.pageUrl('users.html', this.props.language)}>
-              User Showcase
-            </a>
+            <h5>社区</h5>
             <a
               href="http://stackoverflow.com/questions/tagged/dace"
               target="_blank"
               rel="noreferrer noopener">
               Stack Overflow
             </a>
-            <a href="https://github.com/dacejs/dace/issues/new/choose">Add issue</a>
+            <a href="https://github.com/dacejs/dace/issues/new/choose">
+              反馈
+            </a>
           </div>
           <div>
-            <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
+            <h5>更多</h5>
+            <a href={`${this.props.config.baseUrl}blog`}>博客</a>
             <a href={this.props.config.repoUrl}>GitHub</a>
             <a
               className="github-button"

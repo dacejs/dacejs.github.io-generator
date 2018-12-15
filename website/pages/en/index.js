@@ -84,76 +84,53 @@ class Index extends React.Component {
         id={props.id}
         background={props.background}>
         <GridBlock
-          align="center"
+          align={props.align}
           contents={props.children}
           layout={props.layout}
         />
       </Container>
     );
 
-    const FeatureCallout = () => (
-      <div
-        className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
-      </div>
-    );
-
-    const TryOut = () => (
-      <Block id="try">
-        {[
-          {
-            content: 'Talk about trying this out',
-            image: `${baseUrl}img/dace.svg`,
-            imageAlign: 'left',
-            title: 'Try it Out',
-          },
-        ]}
-      </Block>
-    );
-
-    const Description = () => (
-      <Block background="dark">
-        {[
-          {
-            content:
-              'This is another description of how this project is useful',
-            image: `${baseUrl}img/dace.svg`,
-            imageAlign: 'right',
-            title: 'Description',
-          },
-        ]}
-      </Block>
-    );
-
     const LearnHow = () => (
       <Block background="light">
         {[
           {
-            content: 'Talk about learning how to use this',
-            image: `${baseUrl}img/dace.svg`,
+            content: `无论使用 React 还是其他库，Dace 都致力让你关注代码，而不是构建工具。
+
+要创建名为 \`my-app\` 的项目，请运行以下命令：
+
+\`\`\`sh
+npx create-react-app my-app
+\`\`\`
+`,
+            image: 'https://camo.githubusercontent.com/29765c4a32f03bd01d44edef1cd674225e3c906b/68747470733a2f2f63646e2e7261776769742e636f6d2f66616365626f6f6b2f6372656174652d72656163742d6170702f323762343261632f73637265656e636173742e737667',
             imageAlign: 'right',
-            title: 'Learn How',
+            title: '快速入门',
           },
         ]}
       </Block>
     );
 
     const Features = () => (
-      <Block layout="fourColumn">
+      <Block layout="fourColumn" align="center">
         {[
           {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/dace.svg`,
-            imageAlign: 'top',
-            title: 'Feature One',
+            content: '你不需要学习和配置许多构建工具。即时重新加载可以帮助你集中精力进行开发。当需要部署时，包会自动优化。',
+            // image: `${baseUrl}img/dace.svg`,
+            // imageAlign: 'top',
+            title: '容易上手',
           },
           {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/dace.svg`,
-            imageAlign: 'top',
-            title: 'Feature Two',
+            content: '你只需要写一套代码，99% 的代码均是服务器端和浏览器端共用，能极大的提升开发效率和降低维护成本。',
+            // image: `${baseUrl}img/dace.svg`,
+            // imageAlign: 'top',
+            title: '深度同构',
+          },
+          {
+            content: 'Dace 使用 Webpack、Babel、ESLint、PostCSS 和其他优秀的项目来为应用程序提供动力。如果你想要高级配置，你可以直接编辑它们的配置文件。',
+            // image: `${baseUrl}img/dace.svg`,
+            // imageAlign: 'top',
+            title: '开箱即用',
           },
         ]}
       </Block>
@@ -176,12 +153,12 @@ class Index extends React.Component {
 
       return (
         <div className="productShowcaseSection paddingBottom">
-          <h2>Who is Using This?</h2>
-          <p>This project is used by all these people</p>
+          <h2>谁在使用 Dace ？</h2>
+          <p>其他人也在使用 Dace</p>
           <div className="logos">{showcase}</div>
           <div className="more-users">
             <a className="button" href={pageUrl('users.html')}>
-              More {siteConfig.title} Users
+              更多 {siteConfig.title} 使用者
             </a>
           </div>
         </div>
@@ -193,10 +170,7 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
+          <LearnHow align="left" />
           <Showcase />
         </div>
       </div>

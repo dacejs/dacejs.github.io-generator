@@ -15,7 +15,7 @@ const users = [
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '//source.qunarzz.com/common/hf/logo.png',
-    infoLink: 'https://www.qunar.com',
+    infoLink: 'https://touch.qunar.com',
     pinned: true,
   },
 ];
@@ -101,6 +101,7 @@ const siteConfig = {
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
   repoUrl: 'https://github.com/dacejs/dace',
+  generatorRepoUrl: 'https://github.com/dacejs/dacejs.github.io-generator',
 };
 
 module.exports = siteConfig;
