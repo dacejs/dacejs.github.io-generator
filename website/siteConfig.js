@@ -88,6 +88,9 @@ const siteConfig = {
   // No .html extensions for paths.
   cleanUrl: true,
 
+  // It will go into a CNAME file when your site is built.
+  cname: 'dacejs.com',
+
   // Open Graph and Twitter card images.
   ogImage: 'img/docusaurus.png',
   twitterImage: 'img/docusaurus.png',
