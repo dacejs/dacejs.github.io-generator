@@ -10,7 +10,7 @@ title: 命令行工具
 
 ### 参数
 - `-v`, `--verbose`: 显示详细日志信息
-- `-V`, `--visualizer`: 启用 webpack-visualizer 打包分析工具
+- `-V`, `--visualizer`: 启用 [webpack-visualizer](https://github.com/chrisbateman/webpack-visualizer) 打包分析工具
 
 ### 示例
 - 单独使用
@@ -43,7 +43,7 @@ npm start -- -vV
 
 ### 参数
 - `-v`, `--verbose`: 显示详细日志信息
-- `-V`, `--visualizer`: 启用 webpack-visualizer 打包分析工具
+- `-V`, `--visualizer`: 启用 [webpack-visualizer](https://github.com/chrisbateman/webpack-visualizer) 打包分析工具
 
 ### 参数
 无
