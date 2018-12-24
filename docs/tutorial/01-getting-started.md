@@ -87,7 +87,7 @@ export default () => (
 
 > 约定：所有的页面文件使用 `.jsx` 后缀名
 
-现在，重新启动服务，再次访问 [http://localhost:3000](http://localhost:3000)，在页面上你会看到 "Hello Dace"。 这里，我们只是从 `src/pages/index.jsx` 模块导出了一个简单的 React 组件。 同理，可以编写你自己的模块并且导出它。
+现在，重新启动服务，再次访问 [http://localhost:3000](http://localhost:3000)，在页面上你会看到 `Hello Dace`。 这里，我们只是从 `src/pages/index.jsx` 模块导出了一个简单的 React 组件。 同理，可以编写你自己的模块并且导出它。
 
 ![index Page](/docs/assets/tutorial/01.hello.png)
 
